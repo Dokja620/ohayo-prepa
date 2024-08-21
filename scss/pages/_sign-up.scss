@@ -1,0 +1,95 @@
+#sign-up{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+    form{
+        align-self: center;
+        padding: 0 $spacing-xxl;
+        // width: min(90%, 400px);
+        margin: 0 auto;
+    }
+    input, select{
+        font-size: $font-size;
+        width: 100%;
+        margin-bottom: $spacing;
+        box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.1);
+        &:not([type="radio"]){
+            padding: $spacing-xs $spacing;
+            border-radius: $spacing-xs;
+            border: 2px solid color-mix(in srgb, var(--dark), transparent 50%);
+            background: #e4e4e4;
+        }
+    }
+    select{
+        appearance: none;
+    }
+    .arrow{
+        position: absolute;
+        top: 17px;
+        right: 12px;
+        transform: rotate(45deg);
+        border-right: 3px solid var(--dark);
+        border-bottom: 3px solid var(--dark);
+        width: 8px;
+        opacity: .7;
+        aspect-ratio: 1/1;
+        z-index: 1;
+    }
+    span{
+        position: relative;
+        width: 100%;
+        label{
+            position: absolute;
+            top: -11px;
+            left: $spacing-xs;
+            padding: 0 6px;
+            font-weight: 600;
+            transform: scale(.8);
+            background: #e4e4e4;
+        }
+    }
+    button{
+        height: fit-content;
+        background: var(--primary-500);
+        color: var(--light);
+        padding: $spacing-xs;
+        border-radius: $spacing-xs;
+        font-size: $font-size;
+        letter-spacing: 1px;
+        &:disabled{
+            background: grey;
+            cursor: initial;
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.illustration-slider{
+    background: var(--primary-500);
+}
+
+.auth{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing;
+}
+
+.sign{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: .9;
+        width: 85%;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--primary-500);
+        z-index: -1;
+    }
+}
