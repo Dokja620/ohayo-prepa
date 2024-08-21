@@ -1,0 +1,95 @@
+#sidenav{
+    display: flex;
+    flex-direction: column;
+    padding: $spacing;
+    // gap: $spacing;
+    height: 100vh;
+    background: white;
+    form{
+        margin-top: auto;
+    }
+}
+
+.links{
+    display: grid;
+    gap: $spacing-xs;
+}
+.nav-link{
+    display: flex;
+    gap: $spacing-xs;
+    padding: $spacing-xs $spacing;
+    position: relative;
+    z-index: 1;
+    border-radius: calc($spacing-xs - 4px);
+    background: white;
+    box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.2);
+    transition: .25s ease-in-out;
+    overflow: hidden;
+    :first-child{
+        position: relative;
+        top: 3px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        border-radius: calc($spacing-xs - 4px);
+        top: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(732px at 96.2% 89.9%, rgb(70, 66, 159) 0%, rgb(187, 43, 107) 92%);
+        z-index: -1;
+        transition: .5s ease-in-out;
+    }
+    &:hover::after{
+        transform: scaleX(1);
+    }
+    p{
+        transition: .25s ease-in-out .15s;
+    }
+    .icon *{
+        transition: .25s ease-in-out .15s;
+    }
+    &:hover{
+        p{
+            color: var(--light);
+        }
+        .icon *{
+            color: var(--light);
+        }
+    }
+}
+// .active-link{
+//     background: radial-gradient(732px at 96.2% 89.9%, rgb(70, 66, 159) 0%, rgb(187, 43, 107) 92%);
+//     p{
+//         color: var(--light);
+//     }
+//     .icon *{
+//         color: var(--light);
+//     }
+// }
+
+form{
+    display: grid;
+    gap: $spacing;
+    .theme{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing;
+    }
+    button{
+        border: none;
+        padding: $spacing-xs $spacing;
+        position: relative;
+        z-index: 1;
+        border-radius: calc($spacing-xs - 4px);
+        background: white;
+        box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.2);
+        :first-child{
+            position: relative;
+            top: 3px;
+        }
+    }
+}

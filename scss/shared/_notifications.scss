@@ -1,0 +1,18 @@
+.message{
+    text-align: center;
+    padding: $spacing-xs $spacing;
+    border-radius: $spacing-xs;
+    border: 2px solid color-mix(in srgb, var(--dark), transparent 70%);
+}
+.error-message{
+    background: rgba(255, 0, 0, 0.5);
+}
+.warning-message{
+    background: rgba(255, 166, 0, 0.5);
+}
+.notice-message{
+    background: rgba(0, 89, 255, 0.5);
+}
+.success-message{
+    background: rgba(0, 255, 21, 0.5);
+}

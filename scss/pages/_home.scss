@@ -1,0 +1,138 @@
+#home{
+}
+.overview{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: $spacing;
+}
+.greet, .rank, .level{
+    background: var(--primary-500) center/cover no-repeat;
+    box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.1);
+    height: fit-content;
+    padding: $spacing;
+    border-radius: $spacing-xs;
+    p, h4, h5{
+        color: var(--light);
+    }
+}
+
+.greet{
+    display: flex;
+    align-items: center;
+    gap: $spacing;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3cpath d='M912.0655052192064 93.93338543986155L795.095138151122 49.03266835753294 750.1944210687934 166.00303542561738 867.1647881368779 210.90375250794597z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1220.99 68.13 a175.53 175.53 0 1 0 351.06 0 a175.53 175.53 0 1 0 -351.06 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M14.532168231147388 136.72735335678755L100.52101134862875 56.54145991021146 20.33511790205265-29.447383207269894-65.6537252154287 50.738510239306194z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1149.5513087955142 237.25237586090648L1211.4186224081 296.99694614404933 1271.1631926912428 235.12963253146356 1209.295879078657 175.38506224832074z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M220.24 40.13 a128.43 128.43 0 1 0 256.86 0 a128.43 128.43 0 1 0 -256.86 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M46.09 263.48 a98.28 98.28 0 1 0 196.56 0 a98.28 98.28 0 1 0 -196.56 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-102.03 475.11 a115.02 115.02 0 1 0 230.04 0 a115.02 115.02 0 1 0 -230.04 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    height: 100%;
+    grid-row: span 2;
+    .profile{
+        height: 75px;
+        aspect-ratio: 1/1;
+        background: white center/105% no-repeat;
+        background-image: url('/media/undraw_male_avatar_g98d.svg');
+        border-radius: 50%;
+    }
+    .points{
+        margin-left: auto;
+        a{
+            display: block;
+            margin: $spacing 0 0;
+            padding: 8px 12px;
+            color: var(--primary-500);
+            font-weight: 600;
+            // border: 2px solid #ffd700;
+            background: #ffd700;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
+}
+
+.rank{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3cpath d='M793.1092264411498 249.68091611907232L704.173030214522 217.31078794372166 671.8029020391714 306.24698417034944 760.7390982657992 338.6171123457001z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M409.13 4.49 a107.13 107.13 0 1 0 214.26 0 a107.13 107.13 0 1 0 -214.26 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M747.35 21.73 a136.01 136.01 0 1 0 272.02 0 a136.01 136.01 0 1 0 -272.02 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1308.0243299913395 530.0845931005354L1181.6610453675978 441.6040686540523 1093.1805209211147 567.9673532777941 1219.5438055448565 656.4478777242771z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1198.99 64.89 a126.39 126.39 0 1 0 252.78 0 a126.39 126.39 0 1 0 -252.78 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1034.3142460447484 62.570174699372934L1117.5422205754585 44.87952259836497 1099.8515684744507-38.348451932345206 1016.6235939437405-20.657799831337236z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M31.42324870242471 329.73190039089786L104.88702890164564 398.2379837113725 173.3931122221203 324.7742035121516 99.92933202289937 256.2681201916769z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.level{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1012%26quot%3b)' fill='none'%3e%3cpath d='M-72.03 6.01 a130.2 130.2 0 1 0 260.4 0 a130.2 130.2 0 1 0 -260.4 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M372.9 404.33 a95.72 95.72 0 1 0 191.44 0 a95.72 95.72 0 1 0 -191.44 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M4.578907734283106 311.0198573123505L91.2946905458964 287.7844333369461 68.059266570492 201.0686505253328-18.65651624112129 224.30407450073722z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M295.30012957959906 187.71119852797767L369.7634903335636 283.019954029989 465.0722458355749 208.55659327602444 390.60888508161037 113.24783777401312z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-54.02 83.99 a182.95 182.95 0 1 0 365.9 0 a182.95 182.95 0 1 0 -365.9 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1410.3097808432892 354.59605093383243L1286.900365048768 387.66350423437103 1319.9678183493065 511.0729200288924 1443.3772341438278 478.0054667283538z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1084.35 177.89 a181.28 181.28 0 1 0 362.56 0 a181.28 181.28 0 1 0 -362.56 0z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M909.1345890073285 528.0147515829422L991.0131595923486 426.90313758634636 889.9015455957529 345.02456700132626 808.0229750107327 446.13618099792205z' fill='rgba(137%2c 137%2c 137%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1012'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+// Courses cards
+.ongoing h4{
+    margin: 0 0 $spacing;
+}
+#courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: space-evenly;
+    .course{
+        height: 275px;
+    }
+}
+.course{
+    height: 305px;
+    width: 275px;
+    padding: $spacing;
+    border-radius: $spacing-md;
+    background: color-mix(in srgb, var(--primary-500), transparent 80%);
+    box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.1);
+    .illustration{
+        height: 150px;
+        position: relative;
+        background: url('/media/math.jpg') center/cover no-repeat;
+        border-radius: $spacing;
+        margin: 0 0 $spacing-xs;
+    }
+    .module{
+        position: absolute;
+        bottom: 6px;
+        left: 6px;
+        background: var(--light);
+        padding: 3px 12px;
+        border-radius: $spacing;
+        border: 2px solid color-mix(in srgb, var(--dark), transparent 95%);
+    }
+    .title{
+        margin: 0 0 $spacing;
+        font-weight: 600;
+        font-size: calc($font-size-md - 2px);
+    }
+    .progress{
+        .bar{
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+            background: color-mix(in srgb, var(--dark), transparent 75%);
+            margin: 0 0 $spacing-xs;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                border-radius: 3px;
+                background: color-mix(in srgb, var(--dark), transparent 25%);
+            }
+        }
+    }
+}
+
+.list{
+    display: flex;
+    gap: $spacing;
+    .explore{
+        display: grid;
+        place-content: center;
+        height: 305px;
+        width: 275px;
+        padding: $spacing;
+        border-radius: $spacing-md;
+        background: color-mix(in srgb, var(--primary-500), transparent 80%);
+        box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.1);
+        cursor: pointer;
+        p{
+            font-size: $font-size-xl;
+            font-weight: 600;
+            opacity: .3;
+        }
+    }
+}

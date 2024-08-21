@@ -1,0 +1,25 @@
+header{
+    margin: $spacing-lg $spacing;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        gap: $spacing;
+        a{
+            padding: 8px 12px;
+            border-radius: $spacing-md;
+            cursor: pointer;
+            &.sign-in{
+                border: 2px solid var(--primary-500);
+                color: var(--primary-500);
+                font-weight: 500;
+            }
+            &.sign-up{
+                color: white;
+                background: radial-gradient(732px at 96.2% 89.9%, rgb(70, 66, 159) 0%, rgb(187, 43, 107) 92%);
+            }
+        }
+    }
+}
